@@ -1,8 +1,10 @@
 
 import time
+import numpy as np
 
 with open("input.txt") as input:
-  file = input.read().split("\n\n")
+  file_list = input.read().split("\n")
+  file_array = np.array(file_list)
 
   start_time = time.time()  
 
