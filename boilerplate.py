@@ -4,7 +4,7 @@ import numpy as np
 
 with open("input.txt") as input:
   file_list = input.read().split("\n")
-  file_array = np.array(file_list)
+  file_array = np.array(file_list)[:-1]
 
   start_time = time.time()  
 
